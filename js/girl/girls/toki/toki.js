@@ -1,25 +1,35 @@
-toki = Object.create(girl);
-
-toki.name = 'Toki';
-toki.services = '4122';
-toki.shoe = '1000$';
-toki.barefoot = '2000$';
-toki.inshoe = '4000$';
-toki.butt = '2500$';
-toki.breast = '5000$';
-toki.hands = '700$';
-toki.swallow = '2000$';
-toki.chewing = '1200$';
-toki.fWorship = '80$/min';
-toki.fMassage = '60$/min';
-toki.anitacids = '5000$';
-toki.toenails = '100$';
-toki.description = 'The boss and founder of Bunny Girls! Also the most popular girl here! Toki is playful and dominant. She gives the best service for her customers and will happily accept every idea you give her. She also has a lot of experience and knows how to make the pleasure last longer in vore and crush.';
-toki.quote = 'Hi! Welcome to Bunny Girls. I\'m Toki. First of all, thank you for coming here. You are a pretty good male for volunteering to be eradicated in order to make the world a better place. In order to thank you, I\'ll give you the best vore/crush service you will experience. And if you want anything specific, don’t be shy! I\'m open-minded!';
-toki.aboutHer = '';
-toki.aboutHer = '';
-toki.vores = '';
-toki.crushes = '';
-toki.height = '';
-toki.weight = '';
-toki.footSize = '';
+const toki = new girl(
+    {
+        name: 'Toki',
+        services: '4122',
+        shoe: '1000$',
+        barefoot: '2000$',
+        inshoe: '4000$',
+        butt: '2500$',
+        breast: '5000$',
+        hands: '700$',
+        swallow: '2000$',
+        chewing: '1200$',
+        fWorship: '80$/min',
+        fMassage: '60$/min',
+        anitacids: '5000$',
+        toenails: '100$',
+        description: 'The boss and founder of Bunny Girls! Also the most popular girl here! Toki is playful and dominant. She gives the best service for her customers and will happily accept every idea you give her. She also has a lot of experience and knows how to make the pleasure last longer in vore and crush.',
+        quote: 'Hi! Welcome to Bunny Girls. I\'m Toki. First of all, thank you for coming here. You are a pretty good male for volunteering to be eradicated in order to make the world a better place. In order to thank you, I\'ll give you the best vore/crush service you will experience. And if you want anything specific, don’t be shy! I\'m open-minded!',
+        aboutHer: '',
+        vores: '',
+        crushes: '',
+        height: '',
+        weight: '',
+        footSize: '',
+    },
+    '../../../assets/Logo.png',
+    './../../../whoWeAre.html',
+    [
+        { text: 'Location', href: '#' },
+        { text: 'About us', href: './../../../whoWeAre.html' },
+        { text: 'Our girls', href: './../ourGirls.html' },
+        { text: 'Gallery', href: '#' },
+        { text: 'Work with us', href: '#' }
+    ]
+);

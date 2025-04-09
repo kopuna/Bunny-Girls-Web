@@ -1,25 +1,35 @@
-yuka = Object.create(girl);
-
-yuka.name = 'Yuka';
-yuka.services = '367';
-yuka.shoe = '200$';
-yuka.barefoot = '400$';
-yuka.inshoe = '600$';
-yuka.butt = '850$';
-yuka.breast = '1800$';
-yuka.hands = '300$';
-yuka.swallow = '500$';
-yuka.chewing = '1200$';
-yuka.fWorship = '4$/min';
-yuka.fMassage = '2$/min';
-yuka.anitacids = 'N/A';
-yuka.toenails = '30$';
-yuka.description = 'Yuka is a colleage student who works at Bunny Girls as a part time job. She haves very good grades and is part of the student council. She is very good at butt and feet crush although she doesnt have any personal preference. She gets a bit shy when you pamper her but she secretly loves it (thats why her extras are so cheap hehe).';
-yuka.quote = 'Hey Im Yuka. Im quite experienced with every aspect of this. I had an ex obsesed with my feet and butt so im pretty good with that. I also used to play piano so my hands are good for crushing too. Im good with breast crushing too but its too personal so it will be more expensive. Also I tried vore a few times. I dont mind chewing but only for people under 21 because they are easier to chew. And im not used yet to feeling people in my stomach so I wont take antiacids sorry.';
-yuka.aboutHer = '';
-yuka.aboutHer = '';
-yuka.vores = '';
-yuka.crushes = '';
-yuka.height = '';
-yuka.weight = '';
-yuka.footSize = '';
+const yuka = new girl(
+    {
+        name: 'Yuka',
+        services: '367',
+        shoe: '200$',
+        barefoot: '400$',
+        inshoe: '600$',
+        butt: '850$',
+        breast: '1800$',
+        hands: '300$',
+        swallow: '500$',
+        chewing: '1200$',
+        fWorship: '4$/min',
+        fMassage: '2$/min',
+        anitacids: 'N/A',
+        toenails: '30$',
+        description: 'Yuka is a colleage student who works at Bunny Girls as a part time job. She haves very good grades and is part of the student council. She is very good at butt and feet crush although she doesnt have any personal preference. She gets a bit shy when you pamper her but she secretly loves it (thats why her extras are so cheap hehe).',
+        quote: 'Hey Im Yuka. Im quite experienced with every aspect of this. I had an ex obsesed with my feet and butt so im pretty good with that. I also used to play piano so my hands are good for crushing too. Im good with breast crushing too but its too personal so it will be more expensive. Also I tried vore a few times. I dont mind chewing but only for people under 21 because they are easier to chew. And im not used yet to feeling people in my stomach so I wont take antiacids sorry.',
+        aboutHer: '',
+        vores: '',
+        crushes: '',
+        height: '',
+        weight: '',
+        footSize: '',
+    },
+    '../../../assets/Logo.png',
+    './../../../whoWeAre.html',
+    [
+        { text: 'Location', href: '#' },
+        { text: 'About us', href: './../../../whoWeAre.html' },
+        { text: 'Our girls', href: './../ourGirls.html' },
+        { text: 'Gallery', href: '#' },
+        { text: 'Work with us', href: '#' }
+    ]
+);
