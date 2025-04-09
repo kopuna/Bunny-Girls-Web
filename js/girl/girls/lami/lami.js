@@ -1,0 +1,25 @@
+lami = Object.create(girl);
+
+lami.name = 'Lami';
+lami.services = '52';
+lami.shoe = '90$';
+lami.barefoot = '150$';
+lami.inshoe = '130$';
+lami.butt = 'N/A';
+lami.breast = '300$';
+lami.hands = 'N/A';
+lami.swallow = '400$';
+lami.chewing = 'N/A';
+lami.fWorship = '5$/min';
+lami.fMassage = '3$/min';
+lami.anitacids = '1000$';
+lami.toenails = '10$';
+lami.description = 'One of the newest girls here. She is kind and happy. She loves to be pampered but its also shy. Her favorite type of crush is barefoot as she loves the feeling of the tinies under her feet so if you are looking for a good foot crush you know where to find it! And remember to treat her gentle, she is so adorable!';
+lami.quote = 'Hii! Im not very experienced with this but I want to improve so if you choose a foot crush from me Ill try my best to please you! I also do vore (only sallowing) if you like that but im not very good at it haha. I tried butt crush but its hard for me and I dont have enough strength for hand crush...';
+lami.aboutHer = '';
+lami.aboutHer = '';
+lami.vores = '';
+lami.crushes = '';
+lami.height = '';
+lami.weight = '';
+lami.footSize = '';

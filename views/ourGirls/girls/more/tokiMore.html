@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toki - Bunny Girls</title>
+    <link rel="stylesheet" href="../../../../styles/girls.css">
+    <link rel="stylesheet" href="../../../../styles/navbar.css">
+    <link rel="stylesheet" href="../../../../styles/body.css">
+    <link rel="stylesheet" href="../../../../styles/girlsMore.css">
+</head>
+<body>
+    <div id="navbar-container"></div>
+    <div class="container">
+        <div class="girl-profile">
+            <div class="left-column">
+                <h2>About her</h2>
+                <p>
+                    <span id="aboutHer"></span>
+                </p>
+                <div class="stats">
+                    <p><strong>Name:</strong> <span id="name"></span></p>
+                    <p><strong>Height:</strong> <span id="height"></span></p>
+                    <p><strong>Weight:</strong> <span id="weight"></span></p>
+                    <p><strong>Foot Size:</strong> <span id="footSize"></span></p>
+                </div>
+            </div>
+        
+            <div class="right-column">
+                <h3>Services amount:</h3>
+                <div class="amounts">
+                  <p><span class="label-vore">Vore:</span> <span id="vores"></span></p>
+                  <p><span class="label-crush">Crush:</span> <span id="crushes"></span></p>
+                </div>
+                <div class="chart-container">
+                  <canvas id="servicesChart" width="250" height="250"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./../../../../js/generateNavbar.js" defer></script>
+    <script src="./../../../../js/girl/model/girl.js" defer></script>
+    <script src="./../../../../js/girl/girls/toki/toki.js" defer></script>
+    <script src="./../../../../js/girl/girls/toki/loadMoreContent.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

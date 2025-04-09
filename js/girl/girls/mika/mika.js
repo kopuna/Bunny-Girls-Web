@@ -1,0 +1,25 @@
+mika = Object.create(girl);
+
+mika.name = 'Mika';
+mika.services = '1045';
+mika.shoe = '600$';
+mika.barefoot = '500$';
+mika.inshoe = '800$';
+mika.butt = '1000$';
+mika.breast = '1200$';
+mika.hands = '1100$';
+mika.swallow = '2000$';
+mika.chewing = '1000$';
+mika.fWorship = '10$/min';
+mika.fMassage = '8$/min';
+mika.anitacids = '50$';
+mika.toenails = '45$';
+mika.description = 'One of the new and most popular girls! Mika is a cute girl that honestly thinks men only exist to please girls in any way. She will end you with a smile in her face but she wont care about you even a bit! She is just doing this because it feels nice. She cares less about you than Iori!';
+mika.quote = 'Heey! Im Mika. I love to feel guys explode under my feet or disolve in my stomach. I can do any service except breast crush because is not very fun, but I enjoy foot crush and vore the most. Oh! And I also love younger boys because they are cute and easier to crush so come as soon as you can here and let me end you like a good boy!';
+mika.aboutHer = '';
+mika.aboutHer = '';
+mika.vores = '';
+mika.crushes = '';
+mika.height = '';
+mika.weight = '';
+mika.footSize = '';
