@@ -1,24 +1,35 @@
-iori = Object.create(girl);
-
-iori.name = 'Iori';
-iori.services = '3042';
-iori.shoe = '500$';
-iori.barefoot = '1800$';
-iori.inshoe = '4000$';
-iori.butt = 'N/A';
-iori.breast = 'N/A';
-iori.hands = 'N/A';
-iori.swallow = '1400$';
-iori.chewing = '800$';
-iori.fWorship = '90$/min';
-iori.fMassage = '50$/min';
-iori.anitacids = 'N/A';
-iori.toenails = '120$';
-iori.description = 'One of the most popular girls. Iori is a serious girl that wont pay you much atention when giving the service. She will always see you as an inferior and will be bored to assist you. Thats why her prices are higher than normal. But that also means her quality is splendid!';
-iori.quote = 'Dont expect me to be gentle on you just because you paid. This project is made just to kill all males and thats why I am here. The fact that you like to be crushed or eaten disgusts me but if its the only way to erradicate every male Ill happily do it';
-iori.aboutHer = 'Iori is a serious girl that won\'t try to make you enjoy while doing her service. She dislikes men almost as much as the founder, that\'s why she is doing this. Only Foot crush and vore is available as a service for her because she doesn\'t think that men are above her feet. She just accepts vore because she thinks it\'s a painful death and that in that case at least she gets to eat something, but if you request vore from her she will just eat you at that moment, no private room or teasing.';
-iori.vores = '738';
-iori.crushes = '2304';
-iori.height = '5.3 / 1.65 cm';
-iori.weight = '112 lbs / 50 kg';
-iori.footSize = '6.5';
+const iori = new girl(
+    {
+        name: 'Iori',
+        services: '3042',
+        shoe: '500$',
+        barefoot: '1800$',
+        inshoe: '4000$',
+        butt: 'N/A',
+        breast: 'N/A',
+        hands: 'N/A',
+        swallow: '1400$',
+        chewing: '800$',
+        fWorship: '90$/min',
+        fMassage: '50$/min',
+        anitacids: 'N/A',
+        toenails: '120$',
+        description: 'One of the most popular girls. Iori is a serious girl that wont pay you much atention when giving the service. She will always see you as an inferior and will be bored to assist you. Thats why her prices are higher than normal. But that also means her quality is splendid!',
+        quote: 'Dont expect me to be gentle on you just because you paid. This project is made just to kill all males and thats why I am here. The fact that you like to be crushed or eaten disgusts me but if its the only way to erradicate every male Ill happily do it',
+        aboutHer: 'Iori is a serious girl that won\'t try to make you enjoy while doing her service. She dislikes men almost as much as the founder, that\'s why she is doing this. Only Foot crush and vore is available as a service for her because she doesn\'t think that men are above her feet. She just accepts vore because she thinks it\'s a painful death and that in that case at least she gets to eat something, but if you request vore from her she will just eat you at that moment, no private room or teasing.',
+        vores: '738',
+        crushes: '2304',
+        height: '5.3 / 1.65 cm',
+        weight: '112 lbs / 50 kg',
+        footSize: '6.5',
+    },
+    '../../../assets/Logo.png',
+    './../../../whoWeAre.html',
+    [
+        { text: 'Location', href: '#' },
+        { text: 'About us', href: './../../../whoWeAre.html' },
+        { text: 'Our girls', href: './../ourGirls.html' },
+        { text: 'Gallery', href: '#' },
+        { text: 'Work with us', href: '#' }
+    ]
+);

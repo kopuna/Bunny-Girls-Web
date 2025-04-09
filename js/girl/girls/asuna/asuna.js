@@ -16,6 +16,7 @@ const asuna = new girl(
         toenails: '45$',
         description: 'A classic recommendation. One of the most popular ones. Asuna loves to crush tinies with her body. But I really mean it when I said she loves it! When she crushed her first tiny barefoot she falled in love with the sensation thats why her foot crush are cheap. She provides excelent vore services too but she will try to make you choose a crush option (specially the feet ones).',
         quote: 'Hi there <3 I just love playing with tinies. Anything is fine but I especially love crushing you under my feet. If you\'re okay with me playing with myself as I squish you flat, then I\'m your girl! And sorry about the prices, I had to raise them a bit because I had too many requests. But I\'ll keep them reasonable so everyone can enjoy it with me!',
+        aboutHer: '',
         vores: '',
         crushes: '',
         height: '',
