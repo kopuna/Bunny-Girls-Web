@@ -1,24 +1,34 @@
-asuna = Object.create(girl);
-
-asuna.name = 'Asuna';
-asuna.services = '1880';
-asuna.shoe = '600$';
-asuna.barefoot = '500$';
-asuna.inshoe = '800$';
-asuna.butt = '1000$';
-asuna.breast = '1200$';
-asuna.hands = '1100$';
-asuna.swallow = '2000$';
-asuna.chewing = '1000$';
-asuna.fWorship = '10$/min';
-asuna.fMassage = '8$/min';
-asuna.anitacids = '50$';
-asuna.toenails = '45$';
-asuna.description = 'A classic recommendation. One of the most popular ones. Asuna loves to crush tinies with her body. But I really mean it when I said she loves it! When she crushed her first tiny barefoot she falled in love with the sensation thats why her foot crush are cheap. She provides excelent vore services too but she will try to make you choose a crush option (specially the feet ones).';
-asuna.quote = 'Hi there <3 I just love playing with tinies. Anything is fine but I especially love crushing you under my feet. If you\'re okay with me playing with myself as I squish you flat, then I\'m your girl! And sorry about the prices, I had to raise them a bit because I had too many requests. But I\'ll keep them reasonable so everyone can enjoy it with me!';
-asuna.aboutHer = '';
-asuna.vores = '';
-asuna.crushes = '';
-asuna.height = '';
-asuna.weight = '';
-asuna.footSize = '';
+const asuna = new girl(
+    {
+        name: 'Asuna',
+        services: '1880',
+        shoe: '600$',
+        barefoot: '500$',
+        inshoe: '800$',
+        butt: '1000$',
+        breast: '1200$',
+        hands: '1100$',
+        swallow: '2000$',
+        chewing: '1000$',
+        fWorship: '10$/min',
+        fMassage: '8$/min',
+        anitacids: '50$',
+        toenails: '45$',
+        description: 'A classic recommendation. One of the most popular ones. Asuna loves to crush tinies with her body. But I really mean it when I said she loves it! When she crushed her first tiny barefoot she falled in love with the sensation thats why her foot crush are cheap. She provides excelent vore services too but she will try to make you choose a crush option (specially the feet ones).',
+        quote: 'Hi there <3 I just love playing with tinies. Anything is fine but I especially love crushing you under my feet. If you\'re okay with me playing with myself as I squish you flat, then I\'m your girl! And sorry about the prices, I had to raise them a bit because I had too many requests. But I\'ll keep them reasonable so everyone can enjoy it with me!',
+        vores: '',
+        crushes: '',
+        height: '',
+        weight: '',
+        footSize: '',
+    },
+    '../../../assets/Logo.png',
+    './../../../whoWeAre.html',
+    [
+        { text: 'Location', href: '#' },
+        { text: 'About us', href: './../../../whoWeAre.html' },
+        { text: 'Our girls', href: './../ourGirls.html' },
+        { text: 'Gallery', href: '#' },
+        { text: 'Work with us', href: '#' }
+    ]
+);
