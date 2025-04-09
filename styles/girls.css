@@ -58,6 +58,15 @@ h1 {
     margin-top: 10px;
     text-align: center;
 }
+.list-header {
+    font-weight: bold;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-style: italic;
+    border-bottom: 2px solid #e596cd;
+}
 hr {
     margin: 10px 0;
 }

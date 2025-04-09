@@ -29,6 +29,7 @@ class girl {
     
         if (priceList) {
             const priceItems = [
+                { category: "My Prices <3", items: []},
                 { category: "Crush", items: [
                     { name: "Shoe", price: this.girl.shoe },
                     { name: "Barefoot", price: this.girl.barefoot },
@@ -51,7 +52,11 @@ class girl {
     
             priceItems.forEach(group => {
                 let categoryElement = document.createElement("div");
-                categoryElement.classList.add("price-category");
+                if (group.category == "My Prices <3") {
+                    categoryElement.classList.add("list-header");
+                } else {
+                    categoryElement.classList.add("price-category");
+                }
                 categoryElement.textContent = group.category;
                 priceList.appendChild(categoryElement);
     
