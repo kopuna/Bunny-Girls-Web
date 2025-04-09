@@ -13,6 +13,7 @@ h1 {
     padding: 30px;
 }
 .left-section {
+    max-height: 450px;
     width: 60%;
     padding: 20px;
     background: #c07baa;
