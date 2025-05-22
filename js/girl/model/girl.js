@@ -78,6 +78,8 @@ class girl {
         const footSize = document.getElementById("footSize");
         const vores = document.getElementById("vores");
         const crushes = document.getElementById("crushes");
+        const ctx = document.getElementById('servicesChart').getContext('2d');
+        const qna = document.getElementById('qna');
         const logoPath = '../../../../assets/Logo.png';
         const logoLinkValue = './../../../../whoWeAre.html';
         const linksForThisPage = [
@@ -98,7 +100,6 @@ class girl {
         vores.textContent = this.girl.vores;
         crushes.textContent = this.girl.crushes;
         
-        const ctx = document.getElementById('servicesChart').getContext('2d');
         new Chart(ctx, {
             type: 'pie',
             data: {
@@ -119,5 +120,21 @@ class girl {
                 }
             }
         });
+
+        for (let i = 0; i < this.girl.questions.length; i++) {
+            let questionElement = document.createElement("div");
+            questionElement.innerHTML = `<strong>` + this.girl.questions[i] + `</strong>` + `<br>`;
+            questionElement.style.textAlign = "left";
+            qna.appendChild(questionElement);
+            let answerElement = document.createElement("div");
+            answerElement.innerHTML = this.girl.answers[i] + `<br><br>`;
+            answerElement.style.textAlign = "left";
+            qna.appendChild(answerElement);
+        }
+        if (this.girl.name == 'Yuka') {
+            let extra = document.createElement("div");
+            extra.innerHTML = `<strong>` + '*She secretly also joined because Toki said she would get a lot of guys worshiping her feet.*' + `</strong>`
+            qna.appendChild(extra);
+        }
     }
 }
