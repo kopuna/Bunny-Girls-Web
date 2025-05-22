@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
     
     generateNavbar(linksForThisPage, logoPath, logoLinkValue);
     
-    servicesElementAsuna.textContent = asuna.services;
-    servicesElementIori.textContent = iori.services;
-    servicesElementLami.textContent = lami.services;
-    servicesElementMika.textContent = mika.services;
-    servicesElementToki.textContent = toki.services;
-    servicesElementYuka.textContent = yuka.services;
+    servicesElementAsuna.textContent = asuna.girl.services;
+    servicesElementIori.textContent = iori.girl.services;
+    servicesElementLami.textContent = lami.girl.services;
+    servicesElementMika.textContent = mika.girl.services;
+    servicesElementToki.textContent = toki.girl.services;
+    servicesElementYuka.textContent = yuka.girl.services;
 });
