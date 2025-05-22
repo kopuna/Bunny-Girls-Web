@@ -22,6 +22,21 @@ const mika = new girl(
         height: '',
         weight: '',
         footSize: '',
+        questions: [
+            'Q - What\'s your favorite type of service?',
+            'Q - What is your ideal type of customer?',
+            'Q - What was your best experience with a customer?',
+            'Q - What do you think about your clients? Do you feel bad for killing them?',
+            'Q - Do you like being a Bunny Girl? What do you like the most of this job? And why did you choose to work here?'
+        ],
+        answers: [
+            'A - \"Oh well, it depends on the mood! But... Even if using them as insoles is comfortable, I think it\'s more enjoyable to eat them. They are low on calories, taste great, feel great while they squirm in your stomach, and they are so tiny you can eat as many as you want! Well, not more than 36 in one go...\"',
+            'A - \"My favorite type of customer is the one that chooses what I want hehe. Sometimes I want to eat, sometimes I want to crush someone... So I have a special service that\'s not on my page. For \$600 I get to end you the way I prefer that moment. Not a lot of customers choose this, but I got a few that chose it and it\'s pretty great. Also, I really like when they are younger. They taste waaay better and are waaay more satisfying to crush.\"',
+            'A - \"Hm? How am I supposed to know? Do you remember which apple of all the ones you\'ve eaten throughout your life tasted the best? Some are good, and some are bad, but they are just apples—it\'s hard to remember something so trivial hahah. But well, now that I think of it, I remember 2 customers... They were 2 brothers, I think one of them was a 5th grader and the other was a 10th grader... I found them on the street and convinced them to be shrunk hehehe. Don\'t tell Toki though, she doesn\'t like us having such young customers. I don\'t get why! They are going to die anyway in a few years when they come. Why not let them come here whenever they want and enjoy them? Anyway, I remember shrinking them and thinking of using them as insoles, but it\'s not every day I get to enjoy such a young client and it would be a waste just to crush him! So I instead swallowed the youngest one. It tasted amazing! I was about to eat the other one but I didn\'t want him to take away the taste of his brother, so I just crushed him instead. I don\'t know why I remember this one exactly. Maybe I was in a great mood. It\'s not like he was my youngest snack either.\"',
+            'A - \"Bad? Why would I feel bad? Do you feel bad for eating a bag of chips, or stepping on the floor? They exist just to end like this, so why would I feel bad? I mean, if I had to feel bad I\'d feel bad for the bag of chips, because they don\'t jump willingly into your mouth hahah.\"',
+            'A - \"Oh of course I like it! I get free massages, tasty snacks, and insoles! And I even get paid for it! It\'s like being a product tester but more fun. I like everything, but I love when we make events like \\\"Who can eat more customers\\\" or \\\"How many tinies can support a girl\\\"—they are pretty fun and a great way to spend time while enjoying some snacks. I started working here because Iori was complaining about her job and I asked about it. Once she explained it to me I was so excited! Getting paid for having willing snacks and crushing some bugs? That was amazing! I asked her if I could join and she asked Toki and here I am!\"'
+        ],
+          
     },
     '../../../assets/Logo.png',
     './../../../whoWeAre.html',
