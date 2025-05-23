@@ -137,4 +137,56 @@ class girl {
             qna.appendChild(extra);
         }
     }
+
+    closeLightbox() {
+        const lightbox = document.getElementById('lightbox');
+        const video = document.getElementById('lightbox-video');
+        video.pause();
+        video.src = '';
+        lightbox.style.display = 'none';
+    }
+
+    loadGalleryContent() {
+        const logoPath = '../../../../assets/Logo.png';
+        const logoLinkValue = './../../../../whoWeAre.html';
+        const linksForThisPage = [
+            { text: 'Location', href: '#' },
+            { text: 'About us', href: './../../../../whoWeAre.html' },
+            { text: 'Our girls', href: './../../ourGirls.html' },
+            { text: 'Gallery', href: '#' },
+            { text: 'Work with us', href: '#' }
+        ];
+    
+        generateNavbar(linksForThisPage, logoPath, logoLinkValue);
+
+        document.querySelectorAll('.asset').forEach(asset => {
+        asset.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent link navigation
+            const videoSrc = this.getAttribute('href');
+            const lightbox = document.getElementById('lightbox');
+            const video = document.getElementById('lightbox-video');
+
+            video.src = videoSrc;
+            lightbox.style.display = 'flex';
+        });
+        });
+
+        document.querySelector('.lightbox .close').addEventListener('click', function (e) {
+            const lightbox = document.getElementById('lightbox');
+            const video = document.getElementById('lightbox-video');
+            video.pause();
+            video.src = '';
+            lightbox.style.display = 'none';
+        });
+
+        document.getElementById('lightbox').addEventListener('click', function (e) {
+            if (e.target == this) {
+                const lightbox = document.getElementById('lightbox');
+                const video = document.getElementById('lightbox-video');
+                video.pause();
+                video.src = '';
+                lightbox.style.display = 'none';
+            }
+        });
+    }
 }
