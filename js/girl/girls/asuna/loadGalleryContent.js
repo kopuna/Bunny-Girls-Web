@@ -1,6 +1,6 @@
 const assetData = [
     [
-        './../../../../assets/gallery/asuna/asunaHeadCrush.mp4',
+        './../../../../assets/gallery/asuna/headCrush/asunaHeadCrush.mp4',
     ],
     [
         './../../../../assets/gallery/asuna/aSlowCrush/ASlowCrush.jpg',
@@ -23,7 +23,10 @@ const assetData = [
         './../../../../assets/gallery/asuna/aSlowCrush/Page17.jpg',
         './../../../../assets/gallery/asuna/aSlowCrush/Page18.jpg',
         './../../../../assets/gallery/asuna/aSlowCrush/Page19FINAL.jpg',
-    ]
+    ],
+    [
+        './../../../../assets/gallery/asuna/barefoot/barefoot.mp4',
+    ],
 ]
 
 document.addEventListener("DOMContentLoaded", () => {
