@@ -138,15 +138,7 @@ class girl {
         }
     }
 
-    closeLightbox() {
-        const lightbox = document.getElementById('lightbox');
-        const video = document.getElementById('lightbox-video');
-        video.pause();
-        video.src = '';
-        lightbox.style.display = 'none';
-    }
-
-    loadGalleryContent() {
+    loadGalleryContent(assetData) {
         const logoPath = '../../../../assets/Logo.png';
         const logoLinkValue = './../../../../whoWeAre.html';
         const linksForThisPage = [
@@ -156,36 +148,88 @@ class girl {
             { text: 'Gallery', href: '#' },
             { text: 'Work with us', href: '#' }
         ];
-    
+
         generateNavbar(linksForThisPage, logoPath, logoLinkValue);
 
-        document.querySelectorAll('.asset').forEach(asset => {
-        asset.addEventListener('click', function (e) {
-            e.preventDefault(); // Prevent link navigation
-            const videoSrc = this.getAttribute('href');
-            const lightbox = document.getElementById('lightbox');
-            const video = document.getElementById('lightbox-video');
+        const lightbox = document.getElementById('lightbox');
+        const img = document.getElementById('lightbox-img');
+        const video = document.getElementById('lightbox-video');
+        const navButtons = document.getElementsByClassName('nav-btn');
+        const assetButtons = document.querySelectorAll('.asset');
 
-            video.src = videoSrc;
-            lightbox.style.display = 'flex';
-        });
+        let currentGroup = [];
+        let currentIndex = 0;
+
+        assetButtons.forEach((button, groupIndex) => {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                currentGroup = assetData[groupIndex];
+                currentIndex = 0;
+                showItem(currentGroup[currentIndex]);
+            });
         });
 
-        document.querySelector('.lightbox .close').addEventListener('click', function (e) {
-            const lightbox = document.getElementById('lightbox');
-            const video = document.getElementById('lightbox-video');
-            video.pause();
-            video.src = '';
-            lightbox.style.display = 'none';
-        });
+        function showItem(src) {
+            const isVideo = src.endsWith('.mp4');
 
-        document.getElementById('lightbox').addEventListener('click', function (e) {
-            if (e.target == this) {
-                const lightbox = document.getElementById('lightbox');
-                const video = document.getElementById('lightbox-video');
+            if (isVideo) {
+                img.style.display = 'none';
+                video.style.display = 'block';
+                video.src = src;
+                video.play();
+            } else {
                 video.pause();
                 video.src = '';
-                lightbox.style.display = 'none';
+                video.style.display = 'none';
+                img.style.display = 'block';
+                img.src = src;
+            }
+
+            for (let btn of navButtons) {
+                btn.style.display = (!isVideo && currentGroup.length > 1) ? 'block' : 'none';
+            }
+
+            lightbox.style.display = 'flex';
+        }
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+            video.pause();
+            video.src = '';
+        }
+
+        document.getElementById('lightbox').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        document.querySelector('.lightbox .close').addEventListener('click', closeLightbox);
+
+        document.getElementById('prevBtn').addEventListener('click', function () {
+            currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
+            showItem(currentGroup[currentIndex]);
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', function () {
+            currentIndex = (currentIndex + 1) % currentGroup.length;
+            showItem(currentGroup[currentIndex]);
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (lightbox.style.display === 'flex') {
+                if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % currentGroup.length;
+                    showItem(currentGroup[currentIndex]);
+                }
+                if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
+                    showItem(currentGroup[currentIndex]);
+                }
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                }
             }
         });
     }
