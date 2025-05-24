@@ -58,6 +58,9 @@ const assetData = [
         './../../../../assets/gallery/iori/relaxWithMika/Page18.jpg',
         './../../../../assets/gallery/iori/relaxWithMika/Page19.jpg',
     ],
+    [
+        './../../../../assets/gallery/iori/quickCrush/ioriQuickCrush.mp4',
+    ],
 ]
 
 document.addEventListener("DOMContentLoaded", () => {
