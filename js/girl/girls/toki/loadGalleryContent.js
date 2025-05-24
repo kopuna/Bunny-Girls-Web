@@ -1,6 +1,6 @@
 const assetData = [
     [
-        '',
+        './../../../../assets/gallery/toki/headCrush/tokiHeadCrush.mp4',
     ],
 ]
 
