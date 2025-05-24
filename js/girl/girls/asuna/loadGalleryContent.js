@@ -27,6 +27,12 @@ const assetData = [
     [
         './../../../../assets/gallery/asuna/barefoot/barefoot.mp4',
     ],
+    [
+        './../../../../assets/gallery/asuna/cityCrush/asunaCityCrush.mp4',
+    ],
+    [
+        './../../../../assets/gallery/asuna/tease/asunaTease.mp4',
+    ],
 ]
 
 document.addEventListener("DOMContentLoaded", () => {
