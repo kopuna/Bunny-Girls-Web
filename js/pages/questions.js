@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { text: 'Location', href: '#' },
         { text: 'About us', href: './../whoWeAre.html' },
         { text: 'Our girls', href: './ourGirls/ourGirls.html' },
-        { text: 'Gallery', href: '#' },
+        { text: 'Gallery', href: './gallery/gallery.html' },
         { text: 'Work with us', href: '#' }
     ];
     

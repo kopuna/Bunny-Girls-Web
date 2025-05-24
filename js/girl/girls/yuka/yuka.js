@@ -48,7 +48,7 @@ const yuka = new girl(
         { text: 'Location', href: '#' },
         { text: 'About us', href: './../../../whoWeAre.html' },
         { text: 'Our girls', href: './../ourGirls.html' },
-        { text: 'Gallery', href: '#' },
+        { text: 'Gallery', href: './../gallery.html' },
         { text: 'Work with us', href: '#' }
     ]
 );

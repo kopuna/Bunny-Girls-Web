@@ -86,7 +86,7 @@ class girl {
             { text: 'Location', href: '#' },
             { text: 'About us', href: './../../../../whoWeAre.html' },
             { text: 'Our girls', href: './../../ourGirls.html' },
-            { text: 'Gallery', href: '#' },
+            { text: 'Gallery', href: './../../gallery.html' },
             { text: 'Work with us', href: '#' }
         ];
     
@@ -145,7 +145,7 @@ class girl {
             { text: 'Location', href: '#' },
             { text: 'About us', href: './../../../../whoWeAre.html' },
             { text: 'Our girls', href: './../../ourGirls.html' },
-            { text: 'Gallery', href: '#' },
+            { text: 'Gallery', href: './../../../gallery/gallery.html' },
             { text: 'Work with us', href: '#' }
         ];
 
@@ -172,9 +172,6 @@ class girl {
 
         function showItem(src) {
             const isVideo = src.endsWith('.mp4');
-            // const mediaTypeIcon = isVideo ? '▶' : '🖼'; // or use <i class="fa...">
-
-            // asset.innerHTML += `<div class="media-type">${mediaTypeIcon}</div>`;
 
             if (isVideo) {
                 img.style.display = 'none';
