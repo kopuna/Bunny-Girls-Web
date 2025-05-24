@@ -172,6 +172,9 @@ class girl {
 
         function showItem(src) {
             const isVideo = src.endsWith('.mp4');
+            // const mediaTypeIcon = isVideo ? '▶' : '🖼'; // or use <i class="fa...">
+
+            // asset.innerHTML += `<div class="media-type">${mediaTypeIcon}</div>`;
 
             if (isVideo) {
                 img.style.display = 'none';
@@ -192,6 +195,7 @@ class girl {
 
             lightbox.style.display = 'flex';
         }
+
 
         function closeLightbox() {
             lightbox.style.display = 'none';
