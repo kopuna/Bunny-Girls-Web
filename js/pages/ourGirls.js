@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const logoLinkValue = './../../whoWeAre.html';
     const servicesElementAsuna = document.getElementById("services-count-asuna");
     const servicesElementIori = document.getElementById("services-count-iori");
-    const servicesElementLami = document.getElementById("services-count-lami");
+    const servicesElementLamii = document.getElementById("services-count-lamii");
     const servicesElementMika = document.getElementById("services-count-mika");
     const servicesElementToki = document.getElementById("services-count-toki");
     const servicesElementYuka = document.getElementById("services-count-yuka");
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     servicesElementAsuna.textContent = asuna.girl.services;
     servicesElementIori.textContent = iori.girl.services;
-    servicesElementLami.textContent = lami.girl.services;
+    servicesElementLamii.textContent = lamii.girl.services;
     servicesElementMika.textContent = mika.girl.services;
     servicesElementToki.textContent = toki.girl.services;
     servicesElementYuka.textContent = yuka.girl.services;

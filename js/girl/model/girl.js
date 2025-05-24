@@ -137,4 +137,104 @@ class girl {
             qna.appendChild(extra);
         }
     }
+
+    loadGalleryContent(assetData) {
+        const logoPath = '../../../../assets/Logo.png';
+        const logoLinkValue = './../../../../whoWeAre.html';
+        const linksForThisPage = [
+            { text: 'Location', href: '#' },
+            { text: 'About us', href: './../../../../whoWeAre.html' },
+            { text: 'Our girls', href: './../../ourGirls.html' },
+            { text: 'Gallery', href: '#' },
+            { text: 'Work with us', href: '#' }
+        ];
+
+        generateNavbar(linksForThisPage, logoPath, logoLinkValue);
+
+        const lightbox = document.getElementById('lightbox');
+        const img = document.getElementById('lightbox-img');
+        const video = document.getElementById('lightbox-video');
+        const navButtons = document.getElementsByClassName('nav-btn');
+        const assetButtons = document.querySelectorAll('.asset');
+
+        let currentGroup = [];
+        let currentIndex = 0;
+
+        assetButtons.forEach((button, groupIndex) => {
+            button.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                currentGroup = assetData[groupIndex];
+                currentIndex = 0;
+                showItem(currentGroup[currentIndex]);
+            });
+        });
+
+        function showItem(src) {
+            const isVideo = src.endsWith('.mp4');
+            // const mediaTypeIcon = isVideo ? '▶' : '🖼'; // or use <i class="fa...">
+
+            // asset.innerHTML += `<div class="media-type">${mediaTypeIcon}</div>`;
+
+            if (isVideo) {
+                img.style.display = 'none';
+                video.style.display = 'block';
+                video.src = src;
+                video.play();
+            } else {
+                video.pause();
+                video.src = '';
+                video.style.display = 'none';
+                img.style.display = 'block';
+                img.src = src;
+            }
+
+            for (let btn of navButtons) {
+                btn.style.display = (!isVideo && currentGroup.length > 1) ? 'block' : 'none';
+            }
+
+            lightbox.style.display = 'flex';
+        }
+
+
+        function closeLightbox() {
+            lightbox.style.display = 'none';
+            video.pause();
+            video.src = '';
+        }
+
+        document.getElementById('lightbox').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeLightbox();
+            }
+        });
+
+        document.querySelector('.lightbox .close').addEventListener('click', closeLightbox);
+
+        document.getElementById('prevBtn').addEventListener('click', function () {
+            currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
+            showItem(currentGroup[currentIndex]);
+        });
+
+        document.getElementById('nextBtn').addEventListener('click', function () {
+            currentIndex = (currentIndex + 1) % currentGroup.length;
+            showItem(currentGroup[currentIndex]);
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (lightbox.style.display === 'flex') {
+                if (e.key === 'ArrowRight') {
+                    currentIndex = (currentIndex + 1) % currentGroup.length;
+                    showItem(currentGroup[currentIndex]);
+                }
+                if (e.key === 'ArrowLeft') {
+                    currentIndex = (currentIndex - 1 + currentGroup.length) % currentGroup.length;
+                    showItem(currentGroup[currentIndex]);
+                }
+                if (e.key === 'Escape') {
+                    closeLightbox();
+                }
+            }
+        });
+    }
 }
