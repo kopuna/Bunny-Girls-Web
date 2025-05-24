@@ -7,48 +7,29 @@
     <link rel="stylesheet" href="../../../../styles/girls.css">
     <link rel="stylesheet" href="../../../../styles/navbar.css">
     <link rel="stylesheet" href="../../../../styles/body.css">
-    <link rel="stylesheet" href="../../../../styles/girlsMore.css">
+    <link rel="stylesheet" href="../../../../styles/gallery.css">
 </head>
 <body>
     <div id="navbar-container"></div>
     <div class="container">
-        <div class="girl-profile">
-            <div class="left-column">
-                <h2>About her</h2>
-                <p>
-                    <span id="aboutHer"></span>
-                </p>
-                <div class="stats">
-                    <p><strong>Name:</strong> <span id="name"></span></p>
-                    <p><strong>Height:</strong> <span id="height"></span></p>
-                    <p><strong>Weight:</strong> <span id="weight"></span></p>
-                    <p><strong>Foot Size:</strong> <span id="footSize"></span></p>
-                </div>
-            </div>
-        
-            <div class="right-column">
-                <h3>Services amount:</h3>
-                <div class="amounts">
-                  <p><span class="label-vore">Vore:</span> <span id="vores"></span></p>
-                  <p><span class="label-crush">Crush:</span> <span id="crushes"></span></p>
-                </div>
-                <div class="chart-container">
-                  <canvas id="servicesChart" width="250" height="250"></canvas>
-                </div>
-            </div>
+        <div class="title">My Gallery <3</div>
+        <div class="grid">
         </div>
     </div>
-    <div class="container" style="margin-bottom: 100px;">
-        <div id="qna">
-            <h2>
-                Q & A with Noah
-            </h2>
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <button id="prevBtn" class="nav-btn">⟨</button>
+            <img id="lightbox-img" style="display:none;" alt="oops something wrong"/>
+            <button id="nextBtn" class="nav-btn">⟩</button>
+            <video id="lightbox-video" controls autoplay></video>
         </div>
     </div>
     <script src="./../../../../js/generateNavbar.js" defer></script>
     <script src="./../../../../js/girl/model/girl.js" defer></script>
+    <script src="./../../../../js/girl/model/closeVideo.js" defer></script>
+    <script src="./../../../../js/girl/model/showImage.js" defer></script>
     <script src="./../../../../js/girl/girls/noah/noah.js" defer></script>
-    <script src="./../../../../js/girl/girls/noah/loadMoreContent.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./../../../../js/girl/girls/noah/loadGalleryContent.js" defer></script>
 </body>
 </html>

@@ -1,3 +1,3 @@
 document.addEventListener("DOMContentLoaded", () => {
-    lami.loadMoreContent();
+    lamii.loadMoreContent();
 });

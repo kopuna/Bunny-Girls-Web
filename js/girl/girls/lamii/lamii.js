@@ -1,6 +1,6 @@
-const lami = new girl(
+const lamii = new girl(
     {
-        name: 'Lami',
+        name: 'Lamii',
         services: '52',
         shoe: '90$',
         barefoot: '150$',
