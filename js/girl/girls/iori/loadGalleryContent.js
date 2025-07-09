@@ -1,5 +1,17 @@
 const assetData = [
     [
+        './../../../../assets/gallery/iori/fastCrush/Page1.jpg',
+        './../../../../assets/gallery/iori/fastCrush/Page2.jpg',
+        './../../../../assets/gallery/iori/fastCrush/Page3.jpg',
+        './../../../../assets/gallery/iori/fastCrush/Page4.jpg',
+        './../../../../assets/gallery/iori/fastCrush/Page5.jpg',
+        './../../../../assets/gallery/iori/fastCrush/Page6.jpg',
+        './../../../../assets/gallery/iori/fastCrush/Page7.jpg',
+        './../../../../assets/gallery/iori/fastCrush/Page8.jpg',
+        './../../../../assets/gallery/iori/fastCrush/Page9.jpg',
+        './../../../../assets/gallery/iori/fastCrush/Page10.jpg',
+    ],
+    [
         './../../../../assets/gallery/iori/cctv/1.jpg',
         './../../../../assets/gallery/iori/cctv/2.jpg',
         './../../../../assets/gallery/iori/cctv/2.jpg',
@@ -23,18 +35,6 @@ const assetData = [
         './../../../../assets/gallery/iori/cctv/20.jpg',
         './../../../../assets/gallery/iori/cctv/21.jpg',
         './../../../../assets/gallery/iori/cctv/22.jpg',
-    ],
-    [
-        './../../../../assets/gallery/iori/fastCrush/Page1.jpg',
-        './../../../../assets/gallery/iori/fastCrush/Page2.jpg',
-        './../../../../assets/gallery/iori/fastCrush/Page3.jpg',
-        './../../../../assets/gallery/iori/fastCrush/Page4.jpg',
-        './../../../../assets/gallery/iori/fastCrush/Page5.jpg',
-        './../../../../assets/gallery/iori/fastCrush/Page6.jpg',
-        './../../../../assets/gallery/iori/fastCrush/Page7.jpg',
-        './../../../../assets/gallery/iori/fastCrush/Page8.jpg',
-        './../../../../assets/gallery/iori/fastCrush/Page9.jpg',
-        './../../../../assets/gallery/iori/fastCrush/Page10.jpg',
     ],
     [
         './../../../../assets/gallery/iori/relaxWithMika/Page0.jpg',
